@@ -21,7 +21,121 @@
     </header>
 
     <main>
-        <!-- Contenido: Moisés -->
+        <!-- Contenido: Moisés (formulario de registro) -->
+        <section id="registro" class="registro">
+
+            <p class="etiqueta">Alertas personalizadas</p>
+            <h1>Recibe alertas de viaje</h1>
+            <p>
+                Indica tus preferencias de viaje. En esta fase el
+                formulario todavía no envía datos.
+            </p>
+
+            <form action="#" method="post" class="formulario tarjeta">
+
+                <!-- Datos personales -->
+                <fieldset class="grupo">
+                    <legend>Tus datos</legend>
+
+                    <div class="campo">
+                        <label for="nombre">Nombre completo</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Ej.: Ana Martínez"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="correo">Correo electrónico</label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="ana@correo.com"
+                            required
+                        >
+                    </div>
+                </fieldset>
+
+                <!-- Preferencias de viaje -->
+                <fieldset class="grupo">
+                    <legend>Tu viaje ideal</legend>
+
+                    <div class="campo">
+                        <label for="origen">Ciudad de salida</label>
+                        <input
+                            type="text"
+                            id="origen"
+                            name="origen"
+                            value="Santo Domingo (SDQ)"
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="destino">Destino deseado</label>
+                        <input
+                            type="text"
+                            id="destino"
+                            name="destino"
+                            placeholder="Ej.: Madrid"
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="fecha">Fecha aproximada</label>
+                        <input
+                            type="date"
+                            id="fecha"
+                            name="fecha"
+                        >
+                    </div>
+
+                    <div class="campo opciones">
+                        <span class="etiqueta-grupo">Tipo de oferta</span>
+
+                        <label for="oferta-vuelo">
+                            <input
+                                type="radio"
+                                id="oferta-vuelo"
+                                name="tipo-oferta"
+                                value="solo-vuelo"
+                            >
+                            Solo vuelo
+                        </label>
+
+                        <label for="oferta-paquete">
+                            <input
+                                type="radio"
+                                id="oferta-paquete"
+                                name="tipo-oferta"
+                                value="vuelo-hotel"
+                            >
+                            Vuelo + hotel
+                        </label>
+                    </div>
+
+                    <div class="campo">
+                        <label for="comentarios">Comentarios</label>
+                        <textarea
+                            id="comentarios"
+                            name="comentarios"
+                            rows="4"
+                            placeholder="Cuéntanos qué buscas..."
+                        ></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="boton">Enviar preferencias</button>
+
+                <p class="nota">
+                    Por ahora el formulario todavía no envía información.
+                </p>
+
+            </form>
+        </section>
     </main>
 
     <!-- Pie de página (Juan) -->
