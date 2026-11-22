@@ -202,8 +202,20 @@ main {
 }
 
 .formulario {
-  max-width: 600px;
-  margin: 0 auto;
+  margin-top: 24px;
+}
+
+.etiqueta {
+  color: var(--mango);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.nota {
+  color: var(--gris);
+  font-size: 0.9rem;
 }
 
 fieldset {
