@@ -293,3 +293,41 @@ input[type="radio"] {
   outline: 3px solid var(--azul);
   outline-offset: 2px;
 }
+
+/* ---------- Adaptacion responsive (Edinson - Turno 7) ---------- */
+/* En tabletas: evitar tarjetas demasiado estrechas. */
+@media (max-width: 900px) {
+  .lista-servicios,
+  .lista-destinos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* En celulares: una columna, sin cambiar el encabezado ni el formulario. */
+@media (max-width: 700px) {
+  .portada {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    padding: 30px 6%;
+  }
+
+  .portada h1 {
+    font-size: 2rem;
+  }
+
+  .portada .imagen-portada {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .servicios,
+  .destinos {
+    padding: 30px 6% 10px;
+  }
+
+  .lista-servicios,
+  .lista-destinos {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+}
