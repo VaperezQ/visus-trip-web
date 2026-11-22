@@ -192,3 +192,92 @@ main {
 .boton:hover {
   background-color: var(--arena);
 }
+
+/* ---------- Estilos del formulario (Lía) ---------- */
+
+.registro {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.formulario {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 2px solid var(--azul);
+  border-radius: 8px;
+  margin: 0 0 20px;
+  padding: 15px 20px;
+}
+
+legend {
+  color: var(--azul-oscuro);
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  color: var(--azul-oscuro);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--gris);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--texto);
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 3px solid var(--mango);
+  border-color: var(--azul);
+}
+
+input[type="radio"] {
+  width: auto;
+  margin: 0;
+  accent-color: var(--azul);
+}
+
+.etiqueta-grupo {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  color: var(--azul-oscuro);
+}
+
+.opcion,
+.opciones label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 20px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.formulario .boton {
+  width: 100%;
+}
+
+.formulario .boton:hover {
+  background-color: var(--azul);
+  color: var(--blanco);
+}
+
+.formulario .boton:focus {
+  outline: 3px solid var(--azul);
+  outline-offset: 2px;
+}
