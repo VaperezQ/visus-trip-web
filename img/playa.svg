@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="800" height="450"
+     viewBox="0 0 800 450">
+
+  <!-- Cielo -->
+  <rect width="800" height="450" fill="#87CEEB"/>
+
+  <!-- Sol -->
+  <circle cx="650" cy="95" r="55"
+          fill="#FFD166"/>
+
+  <!-- Mar -->
+  <rect x="0" y="230" width="800" height="220"
+        fill="#00A8CC"/>
+
+  <!-- Arena -->
+  <path d="M0 345 Q200 310 400 350
+           T800 340 V450 H0 Z"
+        fill="#F4D35E"/>
+
+  <!-- Tronco de palmera -->
+  <path d="M125 370 Q150 230 180 110"
+        stroke="#805333"
+        stroke-width="20"
+        fill="none"/>
+
+  <!-- Hojas de palmera -->
+  <g stroke="#228B22"
+     stroke-width="17"
+     fill="none"
+     stroke-linecap="round">
+    <path d="M180 110 Q90 40 30 110"/>
+    <path d="M180 110 Q180 25 240 20"/>
+    <path d="M180 110 Q260 50 340 90"/>
+    <path d="M180 110 Q100 130 80 210"/>
+    <path d="M180 110 Q260 130 290 200"/>
+  </g>
+
+</svg>
