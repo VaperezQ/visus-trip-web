@@ -331,3 +331,15 @@ input[type="radio"] {
     gap: 14px;
   }
 }
+
+
+/* ---------- Mejora visual: tarjetas ---------- */
+.lista-servicios li,
+.lista-destinos li {
+  transition: transform 0.2s;
+}
+
+.lista-servicios li:hover,
+.lista-destinos li:hover {
+  transform: translateY(-4px);
+}
