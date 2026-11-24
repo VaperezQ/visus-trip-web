@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./ofertas.css";
+import TarjetaOferta from "../components/TarjetaOferta.jsx";
+import FiltroOfertas from "../components/FiltroOfertas.jsx";
 
 // Datos de ejemplo para esta práctica. No son promociones reales.
 const ofertas = [
@@ -91,33 +93,15 @@ export default function Ofertas() {
           </p>
         </div>
 
-        <div className="ofertas-filtros" role="group" aria-label="Filtrar ofertas por categoría">
-          {categorias.map((opcion) => (
-            <button
-              key={opcion}
-              type="button"
-              className={`ofertas-filtro ${categoria === opcion ? "seleccionado" : ""}`}
-              aria-pressed={categoria === opcion}
-              onClick={() => setCategoria(opcion)}
-            >
-              {opcion}
-            </button>
-          ))}
-        </div>
+        <FiltroOfertas
+          categorias={categorias}
+          categoriaActual={categoria}
+          onCambiar={setCategoria}
+        />
 
         <div className="ofertas-grid">
           {ofertasFiltradas.map((oferta) => (
-            <article className="ofertas-tarjeta" key={oferta.id}>
-              <div className="ofertas-tarjeta-cabecera">
-                <span className="ofertas-icono" aria-hidden="true">{oferta.icono}</span>
-                <span className="ofertas-tipo">{oferta.tipo}</span>
-              </div>
-              <div className="ofertas-tarjeta-cuerpo">
-                <h3>{oferta.destino}</h3>
-                <p className="ofertas-ubicacion">{oferta.ubicacion}</p>
-                <p>{oferta.descripcion}</p>
-              </div>
-            </article>
+            <TarjetaOferta key={oferta.id} {...oferta} />
           ))}
         </div>
 
