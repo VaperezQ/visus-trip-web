@@ -343,3 +343,72 @@ input[type="radio"] {
 .lista-destinos li:hover {
   transform: translateY(-4px);
 }
+
+/* ======================================
+   TURNO 6 - RICARDO BURGOS
+   Responsive y accesibilidad
+   ====================================== */
+
+/* Indicadores al navegar mediante teclado */
+:where(a, button, input, select, textarea):focus-visible {
+    outline: 3px solid #f7a61c;
+    outline-offset: 3px;
+}
+
+.encabezado a:focus-visible {
+    outline-color: #ffffff;
+}
+
+/* Imagenes adaptables */
+img {
+    max-width: 100%;
+}
+
+/* Mejoras en dispositivos moviles */
+@media (max-width: 700px) {
+
+    .encabezado {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+        padding: 16px 6%;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .menu ul {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px 4px;
+        text-align: center;
+        border: 1px solid rgba(255,255,255,0.35);
+        border-radius: 8px;
+    }
+
+    .menu a.activo {
+        background: rgba(255,255,255,0.12);
+    }
+
+    /* Colocar el boton antes de la imagen */
+    .portada > p:last-of-type {
+        grid-row: 4;
+    }
+
+    .portada .imagen-portada {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .portada .boton {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
