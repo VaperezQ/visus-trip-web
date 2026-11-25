@@ -1,0 +1,50 @@
+/* ---------- Panel de la API pública (Virgilio) ---------- */
+.panel-api {
+  padding: 40px 8%;
+}
+
+.panel-api-aviso {
+  color: var(--gris);
+  font-size: 0.9rem;
+}
+
+.panel-api-estado {
+  color: var(--azul);
+  font-weight: bold;
+}
+
+.panel-api-error {
+  color: #9B1C1C;
+  background-color: #FDECEC;
+  border-left: 4px solid #9B1C1C;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+.panel-api-lista {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.panel-api-tarjeta {
+  background-color: var(--blanco);
+  border-top: 4px solid var(--mango);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(15, 59, 95, 0.12);
+}
+
+.panel-api-tarjeta h3 {
+  margin: 0 0 8px;
+  color: var(--azul-oscuro);
+  font-size: 1.05rem;
+}
+
+.panel-api-tarjeta p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+}

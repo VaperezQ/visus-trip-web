@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import PanelAPI from "../components/PanelAPI.jsx";
 
 export default function Inicio() {
   return (
@@ -60,6 +61,8 @@ export default function Inicio() {
           </a>
         </p>
       </section>
+
+      <PanelAPI />
     </>
   );
 }
