@@ -1,0 +1,21 @@
+/* Estilos propios del formulario de alertas (React). El resto viene de estilos.css. */
+.alertas-error {
+  margin: 6px 0 0;
+  color: #B3261E;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.formulario input[aria-invalid="true"] {
+  border-color: #B3261E;
+  border-width: 2px;
+}
+
+.alertas-confirmacion {
+  margin-top: 24px;
+  border-left: 6px solid var(--mango);
+}
+
+.alertas-confirmacion ul {
+  padding-left: 20px;
+}
