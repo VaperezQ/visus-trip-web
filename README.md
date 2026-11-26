@@ -92,9 +92,9 @@ personas reales.
 
 ## Capturas
 
-![Inicio](evidencias/fase-2/lia/inicio.png)
-![Ofertas](evidencias/fase-2/lia/ofertas.png)
-![Alertas](evidencias/fase-2/lia/alertas.png)
+![Inicio](evidencias/fase-2/lia_inicio.png)
+![Ofertas](evidencias/fase-2/lia_ofertas.png)
+![Alertas](evidencias/fase-2/lia_alertas.png)
 
 ## Pruebas
 
